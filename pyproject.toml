@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "extended-containers"
-version = "0.1.0"
+version = "0.1.1"
 description = "Containers and Classes with extended functionality"
 authors = ["Eric Copeland <escopeland@yahoo.com>"]
 license = "MIT"
