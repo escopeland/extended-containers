@@ -1,0 +1,26 @@
+{
+    // Analysis (Pylance) [settings](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance)
+    // "python.analysis.diagnosticMode": "openFilesOnly",  // default: `openFilesOnly`. Don't check standard library, etc.
+    "python.analysis.autoImportCompletions": true,         // default: `false`
+    // "python.analysis.typeCheckingMode": "off",          // default: `off`: use **Ruff** & **MyPy** only, disable Pylance type checking.
+    "python.analysis.ignore": ["*"],                       // Ruff only, disable Pylance messages.
+    // "python.analysis.autoSearchPaths": true,            // default: `true`. Include `src`, among others, in path.
+    // "python.analysis.extraPaths": [                     // python.analysis.autoSearchPaths includes 'src', among others.
+    //     "${workspaceFolder}/src",
+    // ],
+    "terminal.integrated.env.linux": {
+        "PYTHONPATH": "./src:./tests"
+    },
+    // Python configuration
+    // "python.envFile": "${workspaceFolder}/.env",        // default: "${workspaceFolder}/.env
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",  // default: "python"
+    "python.terminal.activateEnvironment": false,          // default: `true`
+    // "python.experiments.optInto": ["pythonREPLSmartSend"], // deprecated
+    
+    // Test settings (PyTest?)
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+    "python.testing.cwd": "${workspaceFolder}/tests",
+    "python.testing.pytestPath": "${workspaceFolder}/.venv/bin/pytest",
+    "python.testing.autoTestDiscoverOnSaveEnabled": true
+}

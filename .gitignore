@@ -1,0 +1,10 @@
+.env
+.out
+.venv/
+.mypy_cache/
+.pytest_cache/
+certs/
+dist/
+__pycache__/
+*.tar
+*.cpython*
